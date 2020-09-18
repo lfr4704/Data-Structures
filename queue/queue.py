@@ -21,18 +21,23 @@ from singly_linked_list import LinkedList
 # Implement a Queue using an array for the underlying storage
 class Queue:
     def __init__(self):
+        self.size = 0
         self.storage = []
 
     def __len__(self):
-        return len(self.storage)
+        return self.size
 
     def enqueue(self, value):
-        self.storage.append(value)
+        self.size += 1
+        self.storage.insert(0, value)
 
     def dequeue(self):
-        if self.storage == 0:
-            return None
-        return self.storage.pop(0)
+        if self.size == 0:
+            pass
+        else:
+            value = self.storage.pop()
+            self.size -= 1
+            return value 
 
 class QueueL:
     def __init__(self):
