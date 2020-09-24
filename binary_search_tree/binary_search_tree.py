@@ -94,12 +94,12 @@ class BSTNode:
         #get the reference to the current node
 #        current_node = self
         #loop while there is still a current node
-#        while current:
+#        while current_node:
             #if the current value is greater than the max value, update the max value
-#            if current.value > max_value:
-#                max_value = current.value
+#            if current_node.value > max_value:
+#                max_value = current_node.value
             #move on to the next right node
-#            current = current.right
+#            current_node = current_node.right
 
         #return the max value
 #        return max_value
@@ -107,12 +107,16 @@ class BSTNode:
     # Call the function `fn` on the value of each node
     def for_each(self, fn):
         #call the function passing in the current node value
+        fn(self.value)
 
         #if there is a node to the left
+        if self.left:
             #call the funciton to the left values
+            self.left.for_each(fn)
         #if there is a node to the right
+        if self.right:
             #call the funciton on the right node
-        pass
+            self.right.for_each(fn)
 
     # Part 2 -----------------------
 
