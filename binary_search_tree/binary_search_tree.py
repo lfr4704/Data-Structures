@@ -121,18 +121,28 @@ class BSTNode:
     # Part 2 -----------------------
 
     # Print all the values in order from low to high
-    # Hint:  Use a recursive, depth first traversal
+    # Hint:  Use a recursive, depth first traversal (DFT)
     def in_order_print(self):
+        #base case
+        #if there are no more nodes
+            #return
+        #if there is a node to the left
+            #call in order print on the left
+
+        #print the value of the current node (self.value)
+
+        #if there is a node to the right
+            #call in order print on the right
         pass
 
     # Print the value of every node, starting with the given node,
     # in an iterative breadth first traversal
-    def bft_print(self):
+    def bft_print(self):#use a queue LIFO
         pass
 
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
-    def dft_print(self):
+    def dft_print(self): #use a stack FIFO
         pass
 
     # Stretch Goals -------------------------
