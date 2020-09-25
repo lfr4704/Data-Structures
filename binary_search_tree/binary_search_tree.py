@@ -137,12 +137,12 @@ class BSTNode:
 
     # Print the value of every node, starting with the given node,
     # in an iterative breadth first traversal
-    def bft_print(self):#use a queue LIFO
+    def bft_print(self):#use a queue FIFO
         pass
 
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
-    def dft_print(self): #use a stack FIFO
+    def dft_print(self): #use a stack LIFO
         pass
 
     # Stretch Goals -------------------------
